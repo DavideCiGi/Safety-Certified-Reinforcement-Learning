@@ -1,0 +1,171 @@
+.
+├── agent.py
+├── buffer.py
+├── cbfcontroller.py
+├── data
+│   ├── check_CBF_phi-EvaluateFalse-Episode0.npy
+│   ├── check_CBF_phi-EvaluateFalse-Episode1.npy
+│   ├── check_CBF_phi-EvaluateFalse-Episode2.npy
+│   ├── check_CBF_phi-EvaluateFalse-Episode3.npy
+│   ├── check_CBF_phi-EvaluateFalse-Episode4.npy
+│   ├── check_CBF_phi-EvaluateTrue-Episode0.npy
+│   ├── check_CBF_psi-EvaluateFalse-Episode0.npy
+│   ├── check_CBF_psi-EvaluateFalse-Episode1.npy
+│   ├── check_CBF_psi-EvaluateFalse-Episode2.npy
+│   ├── check_CBF_psi-EvaluateFalse-Episode3.npy
+│   ├── check_CBF_psi-EvaluateFalse-Episode4.npy
+│   ├── check_CBF_psi-EvaluateTrue-Episode0.npy
+│   ├── controls-EvaluateFalse-Episode0.npy
+│   ├── controls-EvaluateFalse-Episode1.npy
+│   ├── controls-EvaluateFalse-Episode2.npy
+│   ├── controls-EvaluateFalse-Episode3.npy
+│   ├── controls-EvaluateFalse-Episode4.npy
+│   ├── controls-EvaluateTrue-Episode0.npy
+│   ├── epsilon_phi-EvaluateFalse-Episode0.npy
+│   ├── epsilon_phi-EvaluateFalse-Episode1.npy
+│   ├── epsilon_phi-EvaluateFalse-Episode2.npy
+│   ├── epsilon_phi-EvaluateFalse-Episode3.npy
+│   ├── epsilon_phi-EvaluateFalse-Episode4.npy
+│   ├── epsilon_phi-EvaluateTrue-Episode0.npy
+│   ├── epsilon_psi-EvaluateFalse-Episode0.npy
+│   ├── epsilon_psi-EvaluateFalse-Episode1.npy
+│   ├── epsilon_psi-EvaluateFalse-Episode2.npy
+│   ├── epsilon_psi-EvaluateFalse-Episode3.npy
+│   ├── epsilon_psi-EvaluateFalse-Episode4.npy
+│   ├── epsilon_psi-EvaluateTrue-Episode0.npy
+│   ├── max_G_history.npy
+│   ├── max_violation_history.npy
+│   ├── mean_CBF_phi-EvaluateFalse-Episode0.npy
+│   ├── mean_CBF_phi-EvaluateFalse-Episode1.npy
+│   ├── mean_CBF_phi-EvaluateFalse-Episode2.npy
+│   ├── mean_CBF_phi-EvaluateFalse-Episode3.npy
+│   ├── mean_CBF_phi-EvaluateFalse-Episode4.npy
+│   ├── mean_CBF_phi-EvaluateTrue-Episode0.npy
+│   ├── mean_CBF_psi-EvaluateFalse-Episode0.npy
+│   ├── mean_CBF_psi-EvaluateFalse-Episode1.npy
+│   ├── mean_CBF_psi-EvaluateFalse-Episode2.npy
+│   ├── mean_CBF_psi-EvaluateFalse-Episode3.npy
+│   ├── mean_CBF_psi-EvaluateFalse-Episode4.npy
+│   ├── mean_CBF_psi-EvaluateTrue-Episode0.npy
+│   ├── min_G_history.npy
+│   ├── nominal_CBF_phi-EvaluateFalse-Episode0.npy
+│   ├── nominal_CBF_phi-EvaluateFalse-Episode1.npy
+│   ├── nominal_CBF_phi-EvaluateFalse-Episode2.npy
+│   ├── nominal_CBF_phi-EvaluateFalse-Episode3.npy
+│   ├── nominal_CBF_phi-EvaluateFalse-Episode4.npy
+│   ├── nominal_CBF_phi-EvaluateTrue-Episode0.npy
+│   ├── nominal_CBF_psi-EvaluateFalse-Episode0.npy
+│   ├── nominal_CBF_psi-EvaluateFalse-Episode1.npy
+│   ├── nominal_CBF_psi-EvaluateFalse-Episode2.npy
+│   ├── nominal_CBF_psi-EvaluateFalse-Episode3.npy
+│   ├── nominal_CBF_psi-EvaluateFalse-Episode4.npy
+│   ├── nominal_CBF_psi-EvaluateTrue-Episode0.npy
+│   ├── score_history.npy
+│   ├── states-EvaluateFalse-Episode0.npy
+│   ├── states-EvaluateFalse-Episode1.npy
+│   ├── states-EvaluateFalse-Episode2.npy
+│   ├── states-EvaluateFalse-Episode3.npy
+│   ├── states-EvaluateFalse-Episode4.npy
+│   ├── states-EvaluateTrue-Episode0.npy
+│   ├── true_CBF_phi-EvaluateFalse-Episode0.npy
+│   ├── true_CBF_phi-EvaluateFalse-Episode1.npy
+│   ├── true_CBF_phi-EvaluateFalse-Episode2.npy
+│   ├── true_CBF_phi-EvaluateFalse-Episode3.npy
+│   ├── true_CBF_phi-EvaluateFalse-Episode4.npy
+│   ├── true_CBF_phi-EvaluateTrue-Episode0.npy
+│   ├── true_CBF_psi-EvaluateFalse-Episode0.npy
+│   ├── true_CBF_psi-EvaluateFalse-Episode1.npy
+│   ├── true_CBF_psi-EvaluateFalse-Episode2.npy
+│   ├── true_CBF_psi-EvaluateFalse-Episode3.npy
+│   ├── true_CBF_psi-EvaluateFalse-Episode4.npy
+│   ├── true_CBF_psi-EvaluateTrue-Episode0.npy
+│   ├── worst_CBF_phi-EvaluateFalse-Episode0.npy
+│   ├── worst_CBF_phi-EvaluateFalse-Episode1.npy
+│   ├── worst_CBF_phi-EvaluateFalse-Episode2.npy
+│   ├── worst_CBF_phi-EvaluateFalse-Episode3.npy
+│   ├── worst_CBF_phi-EvaluateFalse-Episode4.npy
+│   ├── worst_CBF_phi-EvaluateTrue-Episode0.npy
+│   ├── worst_CBF_psi-EvaluateFalse-Episode0.npy
+│   ├── worst_CBF_psi-EvaluateFalse-Episode1.npy
+│   ├── worst_CBF_psi-EvaluateFalse-Episode2.npy
+│   ├── worst_CBF_psi-EvaluateFalse-Episode3.npy
+│   ├── worst_CBF_psi-EvaluateFalse-Episode4.npy
+│   └── worst_CBF_psi-EvaluateTrue-Episode0.npy
+├── evaluation_run_details.txt
+├── gps.py
+├── main.py
+├── Master_Thesis_Structure.txt
+├── models
+│   ├── GP_phi
+│   │   ├── assets
+│   │   ├── fingerprint.pb
+│   │   ├── restored
+│   │   │   ├── assets
+│   │   │   ├── fingerprint.pb
+│   │   │   ├── saved_model.pb
+│   │   │   └── variables
+│   │   │       ├── variables.data-00000-of-00001
+│   │   │       └── variables.index
+│   │   ├── saved_model.pb
+│   │   └── variables
+│   │       ├── variables.data-00000-of-00001
+│   │       └── variables.index
+│   ├── GP_psi
+│   │   ├── assets
+│   │   ├── fingerprint.pb
+│   │   ├── restored
+│   │   │   ├── assets
+│   │   │   ├── fingerprint.pb
+│   │   │   ├── saved_model.pb
+│   │   │   └── variables
+│   │   │       ├── variables.data-00000-of-00001
+│   │   │       └── variables.index
+│   │   ├── saved_model.pb
+│   │   └── variables
+│   │       ├── variables.data-00000-of-00001
+│   │       └── variables.index
+│   └── td3
+│       ├── checkpoint
+│       ├── ckpt-129.data-00000-of-00001
+│       ├── ckpt-129.index
+│       ├── ckpt-130.data-00000-of-00001
+│       ├── ckpt-130.index
+│       ├── ckpt-131.data-00000-of-00001
+│       └── ckpt-131.index
+├── networks.py
+├── plots
+│   ├── BergmanRunTD3-EvaluateFalse-Episode0-Score3250.pdf
+│   ├── BergmanRunTD3-EvaluateFalse-Episode1-Score9404.pdf
+│   ├── BergmanRunTD3-EvaluateFalse-Episode2-Score11037.pdf
+│   ├── BergmanRunTD3-EvaluateFalse-Episode3-Score10938.pdf
+│   ├── BergmanRunTD3-EvaluateFalse-Episode4-Score10903.pdf
+│   ├── BergmanRunTD3-EvaluateTrue-Episode0-Score14070.pdf
+│   ├── BergmanTrainingGTrend.pdf
+│   ├── BergmanTrainingScoreTD3.pdf
+│   ├── BergmanTrainingViolationsTD3.pdf
+│   ├── RewardFunction.pdf
+│   ├── SafeSetViolationsPhi-EvaluateFalse-Episode0.pdf
+│   ├── SafeSetViolationsPhi-EvaluateFalse-Episode1.pdf
+│   ├── SafeSetViolationsPhi-EvaluateFalse-Episode2.pdf
+│   ├── SafeSetViolationsPhi-EvaluateFalse-Episode3.pdf
+│   ├── SafeSetViolationsPhi-EvaluateFalse-Episode4.pdf
+│   ├── SafeSetViolationsPhi-EvaluateTrue-Episode0.pdf
+│   ├── SafeSetViolationsPsi-EvaluateFalse-Episode0.pdf
+│   ├── SafeSetViolationsPsi-EvaluateFalse-Episode1.pdf
+│   ├── SafeSetViolationsPsi-EvaluateFalse-Episode2.pdf
+│   ├── SafeSetViolationsPsi-EvaluateFalse-Episode3.pdf
+│   ├── SafeSetViolationsPsi-EvaluateFalse-Episode4.pdf
+│   └── SafeSetViolationsPsi-EvaluateTrue-Episode0.pdf
+├── __pycache__
+│   ├── agent.cpython-310.pyc
+│   ├── buffer.cpython-310.pyc
+│   ├── cbfcontroller.cpython-310.pyc
+│   ├── cbfcontroller_gen.cpython-310.pyc
+│   ├── compensator.cpython-310.pyc
+│   ├── gps.cpython-310.pyc
+│   ├── networks.cpython-310.pyc
+│   └── utils.cpython-310.pyc
+├── requirements.txt
+└── utils.py
+
+18 directories, 151 files
