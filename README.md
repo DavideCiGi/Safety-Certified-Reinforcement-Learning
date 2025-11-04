@@ -1,4 +1,4 @@
-# Probabilistic Safety-Certified Deep Reinforcement Learning for Discrete Time Systems Using High-Order Discrete-Time Control Barrier Functions
+# Probabilistic Safety-Certified Deep Reinforcement Learning for Discrete Time Systems
 Tensorflow2 implementation of the RL-HODTCBF algorithm.
 
 What is this algorithm all about?
